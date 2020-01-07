@@ -1,0 +1,62 @@
+.bar {
+    width: 6px;
+    height: 60px;
+    background: black;
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: loading 3.5s ease-in-out infinite;
+}
+
+.bar1{
+    animation-delay: 0.3s;
+}
+.bar2{
+    animation-delay: 0.4s;
+}
+.bar3{
+    animation-delay: 0.5s;
+}
+.bar4{
+    animation-delay: 0.6s;
+}
+.bar5{
+    animation-delay: 0.7s;
+}
+.bar6{
+    animation-delay: 0.8s;
+}
+.bar7{
+    animation-delay: 0.9s;
+}
+.bar8{
+    animation-delay: 1s;
+}
+.bar9{
+    animation-delay: 1.1s;
+}
+.bar10{
+    animation-delay: 1.2s;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes loading{
+    0%{
+        transform:scaleY(0.1);
+        background: #706fd3;
+    }
+    50%{
+        transform: scaleY(1);
+        background: #474787;
+    }
+    100%{
+        transform: scaleY(0.1);
+        background: transparent;
+    }
+}
